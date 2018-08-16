@@ -26,7 +26,7 @@ rm -rf %{buildroot}
 
 mkdir -p %{buildroot}%{_datarootdir}/kdav
 cp -a *  %{buildroot}%{_datarootdir}/kdav/
-rm -rf   %{buildroot}%{_datarootdir}/kdav/{tests,LICENSE,README.md,TRADEMARKS}
+rm -rf   %{buildroot}%{_datarootdir}/kdav/{centos,tests,composer.*,LICENSE,README.md,TRADEMARKS}
 mkdir -p %{buildroot}%{_sysconfdir}/httpd/conf.d
 install -m 0664 %{SOURCE1} %{buildroot}%{_sysconfdir}/httpd/conf.d/
 mkdir -p %{buildroot}%{_sysconfdir}/logrotate.d
