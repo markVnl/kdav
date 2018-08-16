@@ -1,0 +1,6 @@
+/var/log/kdav/*.log {
+    size 1k
+    create www-data www-data
+    compress
+    rotate 4
+}
